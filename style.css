@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background: rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+  color: black;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 70vh;
+  border-radius: 20px;
+  background: rgba(3, 215, 243, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 30px;
+  margin: 10px auto;
+  font-size: 1.3em;
+  color: honeydew;
+}
+.container input {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border-radius: 4px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid aqua;
+  cursor: pointer;
+  margin: 5px auto;
+}
+.container .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  width: 15%;
+  cursor: pointer;
+  height: 35px;
+  margin: 20px;
+  border-radius: 5px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 1.2em;
+}
+.check:hover {
+  background: #fff;
+  color: black;
+}
+.container .output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  margin: 20px auto;
+  width: 100%;
+  color: #ffff;
+}
+@media only screen and (max-width: 900px) {
+ .container{
+width: 90%;
+   height: 60vh;
+  }
+  .container label{
+    font-size: 1.1em;
+width : 80%;
+  }
+  .check{
+    width: 25%
+  }
+  .heading{
+    font-size: 1.2em;
+}
+}
